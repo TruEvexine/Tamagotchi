@@ -1,0 +1,66 @@
+import type { PetEvent } from "./types";
+
+export type PetEventDefinition = Omit<PetEvent, "expiresAtHour">;
+
+export const PET_EVENTS: readonly PetEventDefinition[] = [
+  {
+    id: "bathroom",
+    title: "Una pausa de limpieza",
+    message: "¡Creo que necesito un baño! ¿Me ayudas a quedar brillante?",
+    actionLabel: "¡A bañarse!",
+    emoji: "🫧",
+    effects: { hygiene: 30, happiness: 5 },
+    mood: "cleaning",
+    action: "clean",
+  },
+  {
+    id: "play",
+    title: "¡Hora de jugar!",
+    message: "¿Tienes un ratito para jugar conmigo? ¡Se me ocurrió algo divertido!",
+    actionLabel: "¡A jugar!",
+    emoji: "🎾",
+    effects: { fun: 25, happiness: 10 },
+    mood: "playing",
+    action: "play",
+  },
+  {
+    id: "sing",
+    title: "Una canción para ti",
+    message: "Tengo una melodía nueva en la cabeza. ¿La cantamos juntos?",
+    actionLabel: "¡A cantar!",
+    emoji: "🎵",
+    effects: { happiness: 12, fun: 8 },
+    mood: "singing",
+    action: "sing",
+  },
+  {
+    id: "dance",
+    title: "¡Baile improvisado!",
+    message: "¡Pon tus patitas en movimiento y bailemos un poquito!",
+    actionLabel: "¡A bailar!",
+    emoji: "💃",
+    effects: { fun: 20, happiness: 10 },
+    mood: "dancing",
+    action: "dance",
+  },
+  {
+    id: "sleep",
+    title: "Un descanso juntos",
+    message: "Me vendría bien cerrar los ojitos un momento. ¿Descansamos?",
+    actionLabel: "A descansar",
+    emoji: "🌙",
+    effects: { happiness: 8, fun: 5 },
+    mood: "sleepy",
+    action: "sleep",
+  },
+  {
+    id: "cuddle",
+    title: "Un poquito de cariño",
+    message: "A veces un abrazo lo arregla todo. ¿Me das uno?",
+    actionLabel: "¡Abrazo!",
+    emoji: "💛",
+    effects: { happiness: 15 },
+    mood: "happy",
+    action: "cuddle",
+  },
+];

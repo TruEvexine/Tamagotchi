@@ -1,0 +1,26 @@
+export const GAME_CONFIG = {
+  realSecondsPerGameHour: 6,
+  totalGameHours: 24,
+  foodRequestIntervalHours: 6,
+  foodRequestGraceHours: 2,
+  maximumIgnoredFoodRequests: 2,
+  maximumConsecutiveOverfeeding: 3,
+  maximumPetNameLength: 16,
+  overfeedingHungerThreshold: 75,
+  needsDecayPerHour: {
+    hunger: 8,
+    fun: 5,
+    hygiene: 4,
+    happiness: 1,
+  },
+  careEffects: {
+    food: { hunger: 28, happiness: 4 },
+    play: { fun: 25, happiness: 8 },
+    clean: { hygiene: 30, happiness: 2 },
+    cuddle: { happiness: 12 },
+  },
+  eventChancePerHour: 0.48,
+  eventCooldownHours: 2,
+  eventDurationHours: 2,
+  moodDurationMs: 1_500,
+} as const;
