@@ -1,4 +1,4 @@
-#Creado por Rogelio Emmanuel Ceja Acosta
+# Creado por Rogelio Emmanuel Ceja Acosta
 # 🐣 Tamagotchi Web
 
 Una pequeña mascota virtual web creada con estética **8-bit / pixel art**, donde el jugador debe cuidar a una criatura durante un día completo de tiempo simulado.
